@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francis Abainza's Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./images/flogo.ico">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <!-- ================================================================================= -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <a onclick="scrollToSection('hero')"><img class="logo" src="./images/flogo.svg" alt="logo"></a>
+        <a class="brand" onclick="scrollToSection('hero')">FRANCIS</a>
+      </div>
+      <nav>
+        <img class="close" src="./images/close.svg" alt="close">
+        <ul>
+          <li><a  onclick="scrollToSection('hero')">Home</a></li>
+          <li><a onclick="scrollToSection('about')">About</a></li>
+          <li><a onclick="scrollToSection('skills')">Skills</a></li>
+          <li><a  onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <img class="menu" src="./images/menu.svg" alt="menu">
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <h1>My name is Francis Abainza.<br/> I am an aspiring web developer.</h1>
+      <button onclick="alert('Thank you for hiring me')" class="hero-cta">Hire Me</button>
+    </div>
+  </section>
+  
+  <!-- ================================================================================= -->
+  <section class="about" id="about">
+    <img class="dots" src="./images/dots.svg" alt="dots">
+
+    <div class="svg-group1">
+      <img class="wave" src="./images/wave.svg" alt="wave">
+      <img class="web" src="./images/web.svg" alt="web">
+      <img class="square" src="./images/square.svg" alt="square">
+    </div>
+
+    <div class="about-container">
+      <img class="about-left-col" src="./images/mypic.svg" alt="francis's picture">
+      <div class="about-right-col">
+        <h2>About Me</h2>
+        <p>I am an 18-year-old aspiring web developer from San Pedro, Laguna. One of my main interests as of today is coding, specifically in HTML, CSS, and Javascript.</p>
+        <a href="./files/resume.pdf" class="btn-download" target="_blank">Download Resume</a>
+      </div> 
+    </div>
+    
+    <div class="svg-group2">
+      <img class="circle" src="./images/circle.svg" alt="circle">
+      <img class="cross" src="./images/cross.svg" alt="cross">
+      <img class="triangle" src="./images/triangle.svg" alt="triangle">
+      <img class="wave2" src="./images/wave.svg" alt="wave">
+    </div>
+  </section>
+
+  <!-- ================================================================================= -->
+  <section class="skills" id="skills">
+    <div class="skills-container">
+      <div class="skills-text">
+        <h2>Skills</h2>
+        <p>I am a senior high school graduate with basic knowledge in Front-End Web Development, Web Designing, Video Editing, and Photo Editing.</p>
+      </div>
+      <div class="img html">
+        <img src="./images/webdev.png" alt="html">
+        <div class="overlay">
+          <h4>Front-End Web Development</h4>
+          <p>I have basic knowledge in HTML, CSS, Javascript, and Bootstrap</p>
+        </div>
+      </div>
+      <div class="img css">
+        <img src="./images/webdesign.png" alt="css">
+        <div class="overlay">
+          <h4>Web Designing</h4>
+          <p>I have basic knowledge in Figma</p>
+        </div>
+      </div>
+      <div class="img javascript">
+        <img src="./images/videoediting.png" alt="javascript">
+        <div class="overlay">
+          <h4>Video Editing</h4>
+          <p>I have basic knowledge in Adobe Premiere Pro</p>
+        </div>
+      </div>
+      <div class="img bootstrap">
+        <img src="./images/photoediting.png" alt="bootstrap">
+        <div class="overlay">
+          <h4>Photo Editing</h4>
+          <p>I have basic knowledge in Adobe Photoshop and Canva</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ================================================================================= -->
+   <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <div>
+        <input class="name" type="text" placeholder="Your Name">
+        <input class="email" type="text" placeholder="Your Email">
+      </div>
+      <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Write Something"></textarea>
+      <button onclick="alert('Message sent!')" class="btn-submit">Send Message</button>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left-col">
+        <img src="./images/copyright.svg" alt="copyright">
+        <p>2023 Abainza. All rights reserved</p>
+      </div>
+
+      <div class="footer-right-col">
+        <a href="https://www.linkedin.com/in/francis-abainza-8813a0282/" target="_blank" title="LinkedIn"><img src="./images/linkedin.svg" alt="linkedin"></a>
+        <a href="https://www.facebook.com/francisrafael.abainza/" target="_blank" title="Facebook"><img src="./images/facebook.svg" alt="facebook"></a>
+        <a href="mailto:francisabainza714@gmail.com" title="Mail"><img src="./images/mail.svg" alt="mail"></a>
+      </div>
+    </div>
+   </section>
+
+   <div class="buildings-container">
+    <img class="buildings" src="./images/buildings.svg" alt="buildings">
+   </div>
+   <!-- ================================================================================= -->
+</body>
+</html>
